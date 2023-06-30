@@ -23,10 +23,10 @@ describe('simpleCalculator tests', () => {
   });
 
   test('should return null for invalid action', () => {
-    expect(simpleCalculator({a: 2, b: 3, action: Action.Exponentiate})).toBeNull;
+    expect(simpleCalculator({a: 2, b: 3, action: 'Cos'})).toBeNull;
   });
 
   test('should return null for invalid arguments', () => {
-    expect(simpleCalculator({a: '2', b: 3, action: 'Cos'})).toBeNull;
+    expect(simpleCalculator({a: '2', b: 3, action: Action.Exponentiate})).toBeNull;
   });
 });
